@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsDashboard": "",
+    "AzureWebJobsStorage": ""
+  },
+  "ConnectionStrings": {
+    "exampleDB": ""
+  }
+}
