@@ -12,7 +12,7 @@ namespace FunctionsExample.functions
     public static class RouteExample
     {
         [FunctionName("routeExample")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "routeExample/{userName:alpha}/{id:int}")]HttpRequestMessage req,string userName, int? id, TraceWriter log)
+        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "routeExample/{userName:alpha}/{id:int}")]HttpRequestMessage req,string userName, int id, TraceWriter log)
         {
 
             log.Info("routeExample\tuserName:"+ userName);

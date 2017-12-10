@@ -21,7 +21,7 @@ namespace FunctionsExample.functions
 
             //GET
             name = req.GetQueryNameValuePairs().FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0).Value;
-            email = req.GetQueryNameValuePairs().FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0).Value;
+            email = req.GetQueryNameValuePairs().FirstOrDefault(q => string.Compare(q.Key, "email", true) == 0).Value;
 
             //Other Method (POST PUT PATCH ...)
             //dynamic data = await req.Content.ReadAsAsync<object>();
